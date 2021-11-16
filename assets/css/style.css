@@ -4775,3 +4775,13 @@ iframe {
 	border-radius: 3px;
 	margin-top: 10px;
 }
+
+.d-flex {
+	display: flex!important;
+	justify-content: space-between;
+}
+
+.flex-direction {
+	display: flex;
+	flex-direction: column;
+}
