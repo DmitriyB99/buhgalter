@@ -47,16 +47,16 @@ PAGE JS
 	03. MENU JS
 	*===================================*/
 	//Main navigation scroll spy for shadow
-	$(window).on('scroll', function() {
-		var scroll = $(window).scrollTop();
+	// $(window).on('scroll', function() {
+	// 	var scroll = $(window).scrollTop();
 
-	    if (scroll >= 80) {
-	        $('header').addClass('nav-fixed');
-	    } else {
-	        $('header').removeClass('nav-fixed');
-	    }
+	//     if (scroll >= 80) {
+	//         $('header').addClass('nav-fixed');
+	//     } else {
+	//         $('header').removeClass('nav-fixed');
+	//     }
 
-	});
+	// });
 	
 	//Show Hide dropdown-menu Main navigation 
 	$( document ).on('ready', function () {

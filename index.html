@@ -8,7 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Name - бухгалтер">
 <meta name="keywords" content="CV, resume, card, vcard, online cv, online resume, professional resume, portfolio, one page, bootstrap responsive, creative html template, creative design, parallax, personal">
-
+<style type="text/css">
+    #out,#out2,.rub {
+    font-size: 30px;
+}
+  </style>
 <!-- SITE TITLE -->
 <title>Name - бухгалтер</title>
 <!-- Favicon Icon -->
@@ -56,7 +60,7 @@
 <!-- END LOADER --> 
 
 <!-- START HEADER -->
-<header class="header_wrap fixed-top dark_skin hover_menu_style3 transparent-header">
+<header class="header_wrap fixed-top dark_skin hover_menu_style3 transparent-header nav-fixed">
   <div class="container">
     <nav class="navbar navbar-expand-lg"> 
     	<a class="navbar-brand page-scroll" href="#home_section">
@@ -104,18 +108,18 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-xl-6 col-md-7">
                     <div class="banner_content banner_center_content">
-                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.02s">Меня зовут Алмагуль </h2>
+                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.02s">Здравствуйте, я Алмагуль Испаева</h2>
                         <div id="typed-strings" class="d-none">
                             <b>«FinOut Source Almaty»</b> <b> «FinOut Source Almaty» </b>
                         </div>
                         <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">Я основательница <span id="typed-text" class="text_default"></span></h4>
                         <p class="animation" data-animation="fadeInUp" data-animation-delay="0.04s"><span style="font-size:19px">FinOutsource Almaty</span> - это сервисный центр Вашего бизнеса.</p>
-                        <a href="#" class="btn btn-default rounded-0 btn-aylen animation" data-animation="fadeInUp" data-animation-delay="0.05s">Скачать прайс</a>
+                        <!-- <a href="#" class="btn btn-default rounded-0 btn-aylen animation" data-animation="fadeInUp" data-animation-delay="0.05s">Скачать прайс</a> -->
                     </div>
                 </div>
                 <div class="col-xl-5 col-md-5">
                 	<div class="banner_img animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                    	<img src="assets/images/my_image.png" alt="my_image"/>
+                    	<img src="assets/images/person.PNG" alt="my_image"/>
                     </div>
                 </div>
             </div>
@@ -262,125 +266,164 @@
 </section>
 <!-- END SECTION SERVICES -->
 
-<!-- START SECTION PORTFOLIO -->
-<section id="portfolio" class="pb_70">
-    <div class="container">
-    	<div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-7 col-md-9 text-center">
-                <div class="heading_s1 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                    <h2>Портфолио</h2>
+<section>
+    <div class="container pb-3 shadow rounded">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">Калькулятор услуг по ведению бухгалтерского учета</h1>
+        </div>
+        
+          <div class="col-md-12">
+            <form>
+                <div class="custom-control custom-checkbox row d-flex justify-content-center mb-3" style="flex-direction: column;">
+                    <div class="col-md-12 d-flex">
+                        <div class="col-md-6">
+                            <h3>Система НО</h3>                             
+                            <div style="visibility: visible;">
+                                <input type="radio" id="obsh" name="mess" class="custom-control-input" checked>
+                                <label class="custom-control-label" for="obsh">Общеустановленный режим</label>
+                            </div>
+
+                            <div style="visibility: visible;">
+                                <input type="radio" id="simple" name="mess" class="custom-control-input">
+                                <label class="custom-control-label" for="simple">Упрощенный режим налогообложения</label>
+                            </div> 
+
+                        
+                            <h3>Активность</h3>                      
+                                <div style="visibility: visible;">
+                                    <input type="radio" id="nulevka" name="mess1" class="custom-control-input" checked>
+                                    <label class="custom-control-label" for="nulevka">Нулевка</label>
+                                </div>
+                            
+                                <div class style="visibility: visible;">
+                                    <input type="radio" id="deist" name="mess1" class="custom-control-input">
+                                    <label class="custom-control-label" for="deist">Действующее предприятие</label>
+                                </div> 
+                        </div>
+    
+                        <div class="col-md-6">
+                            <h3>Вид деятельности</h3> 
+                            <div style="visibility: visible;">
+                                <input type="checkbox" id="services" name="mess" class="custom-control-input">
+                                <label class="custom-control-label" for="services">Услуги</label>
+                            </div>
+
+                            <div style="visibility: visible;">
+                                <input type="checkbox" id="torg" name="mess" class="custom-control-input">
+                                <label class="custom-control-label" for="torg">Торговля</label>
+                            </div>
+                           
+                            <div style="visibility: visible;">
+                                <input type="checkbox" id="proizv" name="mess" class="custom-control-input">
+                                <label class="custom-control-label" for="proizv">Производство</label>
+                            </div>
+              
+                            <div style="visibility: visible;">
+                                <input type="checkbox" id="ved" name="mess" class="custom-control-input">
+                                <label class="custom-control-label" for="ved">ВЭД</label>
+                            </div>
+          
+                            <div style="visibility: visible;">
+                                  <input type="checkbox" id="another" name="mess" class="custom-control-input">
+                                  <label class="custom-control-label" for="another">Другое</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+
+                  <div class="custom-control custom-checkbox row d-flex justify-content-center mb-3" style="flex-direction: column;">
+                    
+                  </div>
+                  
+              <div class="row mb-3">
+                <div class="form-group col-md-12 col-sm-12">
+                    <h3>Наличие структурных подразделений/филиалов</h3>
+                  <input type="text" name="date" class="form-control" id="count" required="" placeholder="0" required="">
                 </div>
-                <p class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">Компании которые нам доверяют</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="cleafix small_divider"></div>
-            </div>
-        </div>
-        <div class="row mb-4 mb-md-5">
-            <div class="col-md-12 text-center">
-                <ul class="list_none grid_filter filter_tab2 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
-                    <li><a href="#" class="current" data-filter="*">все</a></li>
-                    <li><a href="#" data-filter=".brands">Бухгалтерия 1</a></li>
-                    <li><a href="#" data-filter=".web-design">Бухгалтерия 2</a></li>
-                    <li><a href="#" data-filter=".development">Бухгалтерия 3</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="grid_container gutter_medium work_col3 portfolio_gallery portfolio_style2 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
-                	<li class="grid-sizer"></li>
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item web-design">
-                        <div class="portfolio_item" data-tilt>
-                            <a href="#" class="image_link">
-                                <img src="assets/images/company_logo.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <h5><a href="portfolio-detail-white.html">Бухгалтерия</a></h5>
-                                    <p>Бухгалтерия</p>
-                              </div>
+              </div>
+              
+              <!-- <div class="row mb-3">
+
+                <div class="form-group col-md-12">
+                  <label for="range">Расстояние <span class="rasstoyanie">0</span> <span>км</span></label>
+                  <input type="range" class="custom-range" min="50" max="5000" step="50" id="range" value="500">
+                </div>
+                
+              </div> -->
+              <div class="row col-12 mb-3"><span id="out">0.0</span> <span class="rub"> тг</span></div>
+              <div class="row">
+                  <div class="col-md-2 col-12">
+                    <input type="button" name="adress" id="btn" class="btn-block btn btn-primary" value="Считать">
+                  </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-12">
+            <form>
+                <div class="col-lg-12">
+                    <h2 class="text-center">Первичные документы (введите количество в месяц)</h2>
+                  </div>
+                <div class="custom-control custom-checkbox row d-flex justify-content-center mb-3" style="flex-direction: column;">
+                    <div class="col-md-12 d-flex">
+                        <div class="col-md-4">
+                            <div>
+                                <h6>Расчетных счетов с движениями по ним</h6>
+                                <input type="text" name="date" class="form-control" id="rachchet" required="" placeholder="0" required="">
+                            </div>
+
+                            <div>
+                                <h6>Поступление товаров и услуг</h6>
+                                <input type="text" name="date" class="form-control" id="postuptovar" required="" placeholder="0" required="">
+                            </div>
+
+                            <div>
+                                <h6>Реализация товаров и услуг</h6>
+                                <input type="text" name="date" class="form-control" id="realizetovar" required="" placeholder="0" required="">
+                            </div>
+                            
                         </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design development">
-                        <div class="portfolio_item" data-tilt>
-                            <a href="#" class="image_link">
-                                <img src="assets/images/company_logo.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <h5><a href="portfolio-detail-white.html">Бухгалтерия</a></h5>
-                                    <p>Бухгалтерия</p>
-                              </div>
+    
+                        <div class="col-md-4">
+                            <div>
+                                <h6>ПОС Терминалы</h6>
+                                <input type="text" name="date" class="form-control" id="pos" required="" placeholder="0" required="">
+                            </div>
+                            
+                            <div>
+                                <h6>Авансовый отчет</h6>
+                                <input type="text" name="date" class="form-control" id="avans" required="" placeholder="0" required="">
+                            </div>
                         </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design">
-                        <div class="portfolio_item" data-tilt>
-                        	<div class="carousel_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="false" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000" data-items="1">
-                                <a href="#" class="image_link">
-                                    <img src="assets/images/company_logo.jpg" alt="image">
-                                </a>
-                                <a href="#" class="image_link">
-                                    <img src="assets/images/company_logo.jpg" alt="image">
-                                </a>
-                         	</div>
-                                <div class="portfolio_content">
-                                    <h5><a href="portfolio-detail-white.html">Бухгалтерия</a></h5>
-                                    <p>Бухгалтерия</p>
-                              </div>
+
+                        <div class="col-md-4">
+                            <div>
+                                <h6>ККМ</h6>
+                                <input type="text" name="date" class="form-control" id="kkm" required="" placeholder="0" required="">
+                            </div>
+
+                            <div>
+                                <h6>Отчет по реализации</h6>
+                                <input type="text" name="date" class="form-control" id="otchrealiz" required="" placeholder="0" required="">
+                            </div>
                         </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands development">
-                        <div class="portfolio_item" data-tilt>
-                            <a href="#" class="image_link">
-                                <img src="assets/images/company_logo.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <h5><a href="portfolio-detail-white.html">Бухгалтерия</a></h5>
-                                    <p>Бухгалтерия</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design development">
-                        <div class="portfolio_item" data-tilt>
-                            <a href="#" class="image_link">
-                                <img src="assets/images/company_logo.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <h5><a href="portfolio-detail-white.html">Бухгалтерия</a></h5>
-                                    <p>Бухгалтерия</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="grid_item brands web-design development">
-                        <div class="portfolio_item" data-tilt>
-                            <a href="#" class="image_link">
-                                <img src="assets/images/company_logo.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <h5><a href="portfolio-detail-white.html">Бухгалтерия</a></h5>
-                                    <p>Бухгалтерия  </p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                </ul>
-            </div>
-        </div>
+                    </div>
+
+              <div class="row col-12 mb-3"><span id="out2">0.0</span> <span class="rub"> тг</span></div>
+              <div class="row">
+                  <div class="col-md-2 col-12">
+                    <input type="button" name="adress" id="btn2" class="btn-block btn btn-primary" value="Считать">
+                  </div>
+              </div>
+            </form>
+          </div>
+        
+      </div>
     </div>
-</section>
-<!-- END SECTION PORTFOLIO -->
+  </section>
 
 <!-- START SECTION COUNTER --> 
 <section class="counter_wrap bg_gray">
@@ -555,6 +598,7 @@
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
 
+<script src="assets/js/index.js"></script> 
 <!-- Latest jQuery --> 
 <script src="assets/js/jquery-1.12.4.min.js"></script> 
 <!-- jquery-ui --> 
