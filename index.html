@@ -9,7 +9,7 @@
 <meta name="description" content="Name - бухгалтер">
 <meta name="keywords" content="CV, resume, card, vcard, online cv, online resume, professional resume, portfolio, one page, bootstrap responsive, creative html template, creative design, parallax, personal">
 <style type="text/css">
-    #out,#out2,.rub {
+    #out,#out2,#out3,.rub {
     font-size: 30px;
 }
   </style>
@@ -64,16 +64,16 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg"> 
     	<a class="navbar-brand page-scroll" href="#home_section">
-        	<img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
-            <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
-            <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" />
+        	<img class="logo_light" src="assets/images/logo.JPG" alt="logo" />
+            <img class="logo_dark" src="assets/images/logo.JPG" alt="logo" style="width: 80px;"/>
+            <img class="logo_default" src="assets/images/logo.JPG" alt="logo" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
       	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         	<a class="navbar-brand page-scroll" href="#home_section">
-                <img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
-                <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
-                <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" />
+                <img class="logo_light" src="assets/images/logo.JPG" alt="logo" />
+                <img class="logo_dark" src="assets/images/logo.JPG" alt="logo" />
+                <img class="logo_default" src="assets/images/logo.JPG" alt="logo" />
             </a>
             <ul class="navbar-nav">
                 <li>
@@ -113,7 +113,7 @@
                             <b>«FinOut Source Almaty»</b> <b> «FinOut Source Almaty» </b>
                         </div>
                         <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">Я основательница <span id="typed-text" class="text_default"></span></h4>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.04s"><span style="font-size:19px">FinOutsource Almaty</span> - это сервисный центр Вашего бизнеса.</p>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.04s"><span style="font-size:19px">FinOutsource Almaty</span> - Ваш новый уровень учёта!</p>
                         <!-- <a href="#" class="btn btn-default rounded-0 btn-aylen animation" data-animation="fadeInUp" data-animation-delay="0.05s">Скачать прайс</a> -->
                     </div>
                 </div>
@@ -278,6 +278,17 @@
                 <div class="custom-control custom-checkbox row d-flex justify-content-center mb-3" style="flex-direction: column;">
                     <div class="col-md-12 d-flex">
                         <div class="col-md-6">
+                            <h3>Форма</h3>                             
+                            <div style="visibility: visible;">
+                                <input type="radio" id="too" name="mess2" class="custom-control-input" checked>
+                                <label class="custom-control-label" for="too">ТОО</label>
+                            </div>
+
+                            <div style="visibility: visible;">
+                                <input type="radio" id="ip" name="mess2" class="custom-control-input">
+                                <label class="custom-control-label" for="ip">ИП</label>
+                            </div> 
+
                             <h3>Система НО</h3>                             
                             <div style="visibility: visible;">
                                 <input type="radio" id="obsh" name="mess" class="custom-control-input" checked>
@@ -420,137 +431,45 @@
               </div>
             </form>
           </div>
+
+          <div class="col-md-12">
+            <form>
+                <div class="col-lg-12">
+                    <h2 class="text-center">Расчет зарплаты (укажите данные за месяц)</h2>
+                  </div>
+                <div class="custom-control custom-checkbox row d-flex justify-content-center mb-3" style="flex-direction: column;">
+                    <div class="col-md-12 d-flex">
+                        <div class="col-md-6">
+                            <div>
+                                <h6>Количество сотрудников (в штате и по договору ГПХ)</h6>
+                                <input type="text" name="date" class="form-control" id="colsotr" required="" placeholder="0" required="">
+                            </div> 
+                        </div>
+                              
+
+                        <div class="col-md-6">
+                            <div>
+                                <h6>Количество отпусков, больничных, декретных</h6>
+                                <input type="text" name="date" class="form-control" id="colbol" required="" placeholder="0" required="">
+                            </div>
+                        </div>
+                    </div>
+
+              <div class="row col-12 mb-3"><span id="out3">0.0</span> <span class="rub"> тг</span></div>
+              <div class="row">
+                  <div class="col-md-2 col-12">
+                    <input type="button" name="adress" id="btn3" class="btn-block btn btn-primary" value="Считать">
+                  </div>
+              </div>
+            </form>
+          </div>
         
       </div>
     </div>
   </section>
 
-<!-- START SECTION COUNTER --> 
-<section class="counter_wrap bg_gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-6">
-                <div class="box_counter counter_dark text-center animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                    <i class="flaticon-briefing"></i>
-                    <h3 class="counter_text"><span class="counter">800</span>+</h3>
-                    <p>Проектов</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6">
-                <div class="box_counter counter_dark text-center animation" data-animation="fadeInUp" data-animation-delay="0.03s">
-                    <i class="flaticon-laugh"></i>
-                    <h3 class="counter_text"><span class="counter">524</span></h3>
-                    <p>Клиентов</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6">
-                <div class="box_counter counter_dark text-center animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                    <i class="flaticon-briefing"></i>
-                    <h3 class="counter_text"><span class="counter">800</span>+</h3>
-                    <p>Проектов</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6">
-                <div class="box_counter counter_dark text-center animation" data-animation="fadeInUp" data-animation-delay="0.03s">
-                    <i class="flaticon-laugh"></i>
-                    <h3 class="counter_text"><span class="counter">524</span></h3>
-                    <p>Клиентов</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END SECTION COUNTER -->
-
-<!-- START SECTION TESTIMONIAL -->
-<section>	
-	<div class="container">
-    	<div class="row justify-content-center">
-        	<div class="col-xl-6 col-lg-7 col-md-9 text-center">
-            	<div class="heading_s1 animation" data-animation="fadeInUp" data-animation-delay="0.02s">	
-                	<h2>Отзывы клиентов</h2>
-                </div>
-                <p class="animation" data-animation="fadeInUp" data-animation-delay="0.03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                <div class="cleafix small_divider"></div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-        	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
-            	<div class="carousel_slider testimonial_style1 owl-carousel owl-theme" data-margin="20" data-dots="false" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "1199":{"items": "3"}}'>
-                	<div class="item">
-                    	<div class="testimonial_box">
-                        	<div class="testimonial_user">
-                                <div class="testimonial_img">
-                                    <img src="assets/images/client_img1.jpg" alt="client"/>
-                                </div>
-                                <div class="client_info">
-                                    <h6>Иван Иванов</h6>
-                                    <span>Юрист</span>
-                                </div>
-                            </div>
-                            <div class="testi_meta">
-                            	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                    	<div class="testimonial_box">
-                        	<div class="testimonial_user">
-                                <div class="testimonial_img">
-                                    <img src="assets/images/client_img2.jpg" alt="client"/>
-                                </div>
-                                <div class="client_info">
-                                    <h6>Александр</h6>
-                                    <span>Бизнесмен</span>
-                                </div>
-                            </div>
-                            <div class="testi_meta">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                    	<div class="testimonial_box">
-                        	<div class="testimonial_user">
-                                <div class="testimonial_img">
-                                    <img src="assets/images/client_img3.jpg" alt="client"/>
-                                </div>
-                                <div class="client_info">
-                                    <h6>Мария</h6>
-                                    <span>Юрист</span>
-                                </div>
-                            </div>
-                            <div class="testi_meta">
-                            	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                    	<div class="testimonial_box">
-                        	<div class="testimonial_user">
-                                <div class="testimonial_img">
-                                    <img src="assets/images/client_img4.jpg" alt="client"/>
-                                </div>
-                                <div class="client_info">
-                                    <h6>Александр</h6>
-                                    <span>Бизнесмен</span>
-                                </div>
-                            </div>
-                            <div class="testi_meta">
-                            	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END SECTION TESTIMONIAL -->
-
-
 <!-- START SECTION CONTACT -->
-<section id="contact" class="small_pt">
+<section id="contact" class="small_pt bg_gray">
 	<div class="container">
     	<div class="row">
         	<div class="col-12">

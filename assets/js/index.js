@@ -16,31 +16,62 @@ let btn = document.querySelector("#btn"),
   avans = document.querySelector("#avans"),
   kkm = document.querySelector("#kkm"),
   otchrealiz = document.querySelector("#otchrealiz"),
-  btn2 = document.querySelector("#btn2");
+  btn2 = document.querySelector("#btn2"),
+  ip = document.querySelector("#ip"),
+  too = document.querySelector("#too"),
+  colsotr = document.querySelector("#colsotr"),
+  colbol = document.querySelector("#colbol"),
+  btn3 = document.querySelector("#btn3");
 
 // Basic function
 btn.onclick = function () {
-  if (obsh.checked) {
-    if (nulevka.checked) {
-      nulevka.value = 10000;
+  if (too.checked) {
+    if (obsh.checked) {
+      if (nulevka.checked) {
+        nulevka.value = 10000;
+      } else {
+        nulevka.value = 0;
+      }
+      if (deist.checked) {
+        deist.value = 20000;
+      } else {
+        deist.value = 0;
+      }
     } else {
-      nulevka.value = 0;
-    }
-    if (deist.checked) {
-      deist.value = 20000;
-    } else {
-      deist.value = 0;
+      if (nulevka.checked) {
+        nulevka.value = 5000;
+      } else {
+        nulevka.value = 0;
+      }
+      if (deist.checked) {
+        deist.value = 15000;
+      } else {
+        deist.value = 0;
+      }
     }
   } else {
-    if (nulevka.checked) {
-      nulevka.value = 5000;
+    if (obsh.checked) {
+      if (nulevka.checked) {
+        nulevka.value = 5000;
+      } else {
+        nulevka.value = 0;
+      }
+      if (deist.checked) {
+        deist.value = 15000;
+      } else {
+        deist.value = 0;
+      }
     } else {
-      nulevka.value = 0;
-    }
-    if (deist.checked) {
-      deist.value = 15000;
-    } else {
-      deist.value = 0;
+      if (nulevka.checked) {
+        nulevka.value = 5000;
+      } else {
+        nulevka.value = 0;
+      }
+      if (deist.checked) {
+        deist.value = 20000;
+      } else {
+        deist.value = 0;
+      }
     }
   }
 
@@ -83,15 +114,20 @@ btn.onclick = function () {
 };
 
 btn2.onclick = () => {
-
-
-    let sum2 = rachchet.value * 5000 +
+  let sum2 =
+    rachchet.value * 5000 +
     postuptovar.value * 520 +
     realizetovar.value * 520 +
     pos.value * 5000 +
-    avans.value * 1000+
+    avans.value * 1000 +
     kkm.value * 5000 +
-    otchrealiz.value * 5000
-    
-    out2.innerHTML = sum2;
-}
+    otchrealiz.value * 5000;
+
+  out2.innerHTML = sum2;
+};
+
+btn3.onclick = () => {
+  let sum3 = colbol.value * 3000 + colsotr.value * 3000;
+
+  out3.innerHTML = sum3;
+};
